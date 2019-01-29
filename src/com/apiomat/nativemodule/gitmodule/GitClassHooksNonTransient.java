@@ -23,155 +23,157 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 package com.apiomat.nativemodule.gitmodule;
-import com.apiomat.nativemodule.*;
-import com.apiomat.nativemodule.basics.User;
-
 
 /**
-* Generated class for hooks on your GitClass data model
-*/
+ * Generated class for hooks on your GitClass data model
+ */
 
 public class GitClassHooksNonTransient<T extends com.apiomat.nativemodule.gitmodule.GitClass> implements com.apiomat.nativemodule.IModelHooksNonTransient<com.apiomat.nativemodule.gitmodule.GitClass>
 {
-    protected com.apiomat.nativemodule.gitmodule.GitClass model;
+	protected com.apiomat.nativemodule.gitmodule.GitClass model;
 
-    @Override
-    public void setCallingModel( com.apiomat.nativemodule.gitmodule.GitClass model )
-    {
-        this.model = model;
-    }
-
-
-    /*
-     * Following Methods can be used if your data model is NOT set to TRANSIENT
-     */
-
-    @Override
-    public void beforePost( com.apiomat.nativemodule.gitmodule.GitClass obj, com.apiomat.nativemodule.Request r )
-    {
-    }
+	@Override
+	public void setCallingModel( final com.apiomat.nativemodule.gitmodule.GitClass model )
+	{
+		this.model = model;
+	}
 
 
-    @Override
-    public void afterPost( com.apiomat.nativemodule.gitmodule.GitClass obj, com.apiomat.nativemodule.Request r )
-    {
-    }
+	/*
+	 * Following Methods can be used if your data model is NOT set to TRANSIENT
+	 */
 
-    @Override
-    public void beforeGet( String id, com.apiomat.nativemodule.Request r )
-    {
-    }
-
-    
-    @Override
-    public void afterGet( com.apiomat.nativemodule.gitmodule.GitClass obj, com.apiomat.nativemodule.Request r )
-    {
-    }
-
-    @Override
-    public String beforeGetAll( String query, com.apiomat.nativemodule.Request r )
-    {
-        /* NOTE that returning null or "" would ignore any query and always return any object of this class and backend */
-        return query;
-    }
-
-    @Override
-    public java.util.List<com.apiomat.nativemodule.gitmodule.GitClass> afterGetAll( java.util.List<com.apiomat.nativemodule.gitmodule.GitClass> objects, String query, com.apiomat.nativemodule.Request r )
-    {
-        /*
-         * If you want to change the returned list of elements, you have to create a new list
-         * and add the elements to return to it. Because getting elements from the "objects"
-         * list will return a copy, changing values in this list does not have any effect.
-         *
-         * If NULL is returned, unnecessary conversions are omitted and result is taken from database.
-         */
-        return null;
-    }
-    @Override
-    public boolean beforePut( com.apiomat.nativemodule.gitmodule.GitClass objFromDB, com.apiomat.nativemodule.gitmodule.GitClass obj, com.apiomat.nativemodule.Request r )
-    {
-        return false;
-    }
-
-    @Override
-    public void afterPut( com.apiomat.nativemodule.gitmodule.GitClass obj, com.apiomat.nativemodule.Request r )
-    {
-    }
-
-    @Override
-    public boolean beforeDelete( com.apiomat.nativemodule.gitmodule.GitClass obj, com.apiomat.nativemodule.Request r )
-    {
-        return false;
-    }
+	@Override
+	public void beforePost( final com.apiomat.nativemodule.gitmodule.GitClass obj, final com.apiomat.nativemodule.Request r )
+	{
+	}
 
 
-    @Override
-    public boolean beforePostData( final com.apiomat.nativemodule.gitmodule.GitClass obj, final String attributeName, final com.apiomat.nativemodule.DataWrapper dataWrapper, final com.apiomat.nativemodule.Request r )
-    {
-        return false;
-    }
+	@Override
+	public void afterPost( final com.apiomat.nativemodule.gitmodule.GitClass obj, final com.apiomat.nativemodule.Request r )
+	{
+	}
 
-    @Override
-    public void afterPostData( final com.apiomat.nativemodule.gitmodule.GitClass obj, final String attributeName, final com.apiomat.nativemodule.DataWrapper dataWrapper, final com.apiomat.nativemodule.Request r )
-    {
-    }
+	@Override
+	public void beforeGet( final String id, final com.apiomat.nativemodule.Request r )
+	{
+	}
 
-    @Override
-    public String beforeGetData( final String dataId, final String attributeName, final com.apiomat.nativemodule.TranscodingConfiguration transcodingConfig, final com.apiomat.nativemodule.Request r )
-    {
-        return null;
-    }
 
-    @Override
-    public void afterGetData( final String dataId, final String attributeName, final com.apiomat.nativemodule.DataWrapper dataWrapper, final com.apiomat.nativemodule.TranscodingConfiguration transcodingConfig, final com.apiomat.nativemodule.Request r )
-    {
-    }
+	@Override
+	public void afterGet( final com.apiomat.nativemodule.gitmodule.GitClass obj, final com.apiomat.nativemodule.Request r )
+	{
+	}
 
-    @Override
-    public boolean beforeDeleteData( final com.apiomat.nativemodule.gitmodule.GitClass obj, final String attributeName, final com.apiomat.nativemodule.DataWrapper dataWrapper, final com.apiomat.nativemodule.Request r )
-    {
-        return false;
-    }
+	@Override
+	public String beforeGetAll( final String query, final com.apiomat.nativemodule.Request r )
+	{
+		/* NOTE that returning null or "" would ignore any query and always return any object of this class and backend */
+		return query;
+	}
 
-    @Override
-    public void afterDeleteData( final com.apiomat.nativemodule.gitmodule.GitClass obj, final String attributeName, final com.apiomat.nativemodule.DataWrapper dataWrapper, final com.apiomat.nativemodule.Request r )
-    {
-    }
+	@Override
+	public java.util.List<com.apiomat.nativemodule.gitmodule.GitClass> afterGetAll( final java.util.List<com.apiomat.nativemodule.gitmodule.GitClass> objects, final String query, final com.apiomat.nativemodule.Request r )
+	{
+		/*
+		 * If you want to change the returned list of elements, you have to create a new list
+		 * and add the elements to return to it. Because getting elements from the "objects"
+		 * list will return a copy, changing values in this list does not have any effect.
+		 *
+		 * If NULL is returned, unnecessary conversions are omitted and result is taken from database.
+		 */
+		return null;
+	}
+	@Override
+	public boolean beforePut( final com.apiomat.nativemodule.gitmodule.GitClass objFromDB, final com.apiomat.nativemodule.gitmodule.GitClass obj, final com.apiomat.nativemodule.Request r )
+	{
+		return false;
+	}
 
-    @Override
-    public boolean beforePostRef( com.apiomat.nativemodule.gitmodule.GitClass obj, Object referencedObject, String referenceName, com.apiomat.nativemodule.Request r )
-    {
-        return false;
-    }
+	@Override
+	public void afterPut( final com.apiomat.nativemodule.gitmodule.GitClass obj, final com.apiomat.nativemodule.Request r )
+	{
+		if ( obj.getGreeting( ) != null )
+		{
+			obj.setForeignId( "hey!" );
+			obj.save( );
+		}
+	}
 
-    @Override
-    public void afterPostRef( com.apiomat.nativemodule.gitmodule.GitClass obj, Object referencedObject, String referenceName, com.apiomat.nativemodule.Request r )
-    {
-    }
+	@Override
+	public boolean beforeDelete( final com.apiomat.nativemodule.gitmodule.GitClass obj, final com.apiomat.nativemodule.Request r )
+	{
+		return false;
+	}
 
-    @Override
-    public String beforeGetAllReferences( String query, String referenceName, com.apiomat.nativemodule.Request r )
-    {
-        /* NOTE that returning null or "" would ignore any query and always return any referenced object */
-        return query;
-    }
 
-    @Override
-    public <Z extends com.apiomat.nativemodule.AbstractClientDataModel> java.util.List<Z> afterGetAllReferences( java.util.List<Z> objects, String query,
-        String referenceName, com.apiomat.nativemodule.Request r )
-    {
-            return null; // return objects here if you changed sth; returning null prevents unnecessary conversions
-    }
+	@Override
+	public boolean beforePostData( final com.apiomat.nativemodule.gitmodule.GitClass obj, final String attributeName, final com.apiomat.nativemodule.DataWrapper dataWrapper, final com.apiomat.nativemodule.Request r )
+	{
+		return false;
+	}
 
-    @Override
-    public boolean beforeDeleteRef( com.apiomat.nativemodule.gitmodule.GitClass obj, Object referencedObject, String referenceName, com.apiomat.nativemodule.Request r )
-    {
-        return false;
-    }
+	@Override
+	public void afterPostData( final com.apiomat.nativemodule.gitmodule.GitClass obj, final String attributeName, final com.apiomat.nativemodule.DataWrapper dataWrapper, final com.apiomat.nativemodule.Request r )
+	{
+	}
 
-    @Override
-    public void afterDeleteRef( com.apiomat.nativemodule.gitmodule.GitClass obj, Object referencedObject, String referenceName, com.apiomat.nativemodule.Request r )
-    {
-    }
+	@Override
+	public String beforeGetData( final String dataId, final String attributeName, final com.apiomat.nativemodule.TranscodingConfiguration transcodingConfig, final com.apiomat.nativemodule.Request r )
+	{
+		return null;
+	}
+
+	@Override
+	public void afterGetData( final String dataId, final String attributeName, final com.apiomat.nativemodule.DataWrapper dataWrapper, final com.apiomat.nativemodule.TranscodingConfiguration transcodingConfig, final com.apiomat.nativemodule.Request r )
+	{
+	}
+
+	@Override
+	public boolean beforeDeleteData( final com.apiomat.nativemodule.gitmodule.GitClass obj, final String attributeName, final com.apiomat.nativemodule.DataWrapper dataWrapper, final com.apiomat.nativemodule.Request r )
+	{
+		return false;
+	}
+
+	@Override
+	public void afterDeleteData( final com.apiomat.nativemodule.gitmodule.GitClass obj, final String attributeName, final com.apiomat.nativemodule.DataWrapper dataWrapper, final com.apiomat.nativemodule.Request r )
+	{
+	}
+
+	@Override
+	public boolean beforePostRef( final com.apiomat.nativemodule.gitmodule.GitClass obj, final Object referencedObject, final String referenceName, final com.apiomat.nativemodule.Request r )
+	{
+		return false;
+	}
+
+	@Override
+	public void afterPostRef( final com.apiomat.nativemodule.gitmodule.GitClass obj, final Object referencedObject, final String referenceName, final com.apiomat.nativemodule.Request r )
+	{
+	}
+
+	@Override
+	public String beforeGetAllReferences( final String query, final String referenceName, final com.apiomat.nativemodule.Request r )
+	{
+		/* NOTE that returning null or "" would ignore any query and always return any referenced object */
+		return query;
+	}
+
+	@Override
+	public <Z extends com.apiomat.nativemodule.AbstractClientDataModel> java.util.List<Z> afterGetAllReferences( final java.util.List<Z> objects, final String query,
+		final String referenceName, final com.apiomat.nativemodule.Request r )
+	{
+		return null; // return objects here if you changed sth; returning null prevents unnecessary conversions
+	}
+
+	@Override
+	public boolean beforeDeleteRef( final com.apiomat.nativemodule.gitmodule.GitClass obj, final Object referencedObject, final String referenceName, final com.apiomat.nativemodule.Request r )
+	{
+		return false;
+	}
+
+	@Override
+	public void afterDeleteRef( final com.apiomat.nativemodule.gitmodule.GitClass obj, final Object referencedObject, final String referenceName, final com.apiomat.nativemodule.Request r )
+	{
+	}
 
 }
